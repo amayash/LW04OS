@@ -13,8 +13,8 @@ namespace LW04
         private int currCapacity;
         private Bitmap bmp;
         // размеры клеток при отрисовке
-        int xSize = 40;
-        int ySize = 40;
+        private readonly int xSize;
+        private readonly int ySize;
 
         /// <summary>
         ///  онструктор
@@ -25,6 +25,8 @@ namespace LW04
             freeElems = new int[maxSizeFS];
             currCapacity = 0;
             bmp = new(pictureBox.Width, pictureBox.Height);
+            xSize = pictureBox.Width / 20;
+            ySize = xSize;
             treeView.BeginUpdate();
         }
 
