@@ -160,12 +160,17 @@
             // 
             // treeView
             // 
+            this.treeView.AllowDrop = true;
             this.treeView.Dock = System.Windows.Forms.DockStyle.Top;
             this.treeView.Location = new System.Drawing.Point(3, 19);
             this.treeView.Name = "treeView";
             this.treeView.Size = new System.Drawing.Size(194, 173);
             this.treeView.TabIndex = 0;
+            this.treeView.ItemDrag += new System.Windows.Forms.ItemDragEventHandler(this.treeView_ItemDrag);
             this.treeView.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView_AfterSelect);
+            this.treeView.DragDrop += new System.Windows.Forms.DragEventHandler(this.treeView_DragDrop);
+            this.treeView.DragEnter += new System.Windows.Forms.DragEventHandler(this.treeView_DragEnter);
+            this.treeView.DragOver += new System.Windows.Forms.DragEventHandler(this.treeView_DragOver);
             // 
             // pictureBox
             // 

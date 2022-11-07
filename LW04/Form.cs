@@ -148,6 +148,61 @@ namespace LW04
             }
         }
         
+        // ѕеремещение TreeNode'ов
+
+        private void treeView_ItemDrag(object sender, ItemDragEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                DoDragDrop(e.Item, DragDropEffects.Move);
+            }
+        }
+        private void treeView_DragEnter(object sender, DragEventArgs e)
+        {
+            e.Effect = e.AllowedEffect;
+        }
+        private void treeView_DragOver(object sender, DragEventArgs e)
+        {
+            Point targetPoint = treeView.PointToClient(new Point(e.X, e.Y));
+
+            treeView.SelectedNode = treeView.GetNodeAt(targetPoint);
+        }
+        private void treeView_DragDrop(object sender, DragEventArgs e)
+        {
+            Point targetPoint = treeView.PointToClient(new Point(e.X, e.Y));
+
+            TreeNode targetNode = treeView.GetNodeAt(targetPoint);
+
+            TreeNode draggedNode;
+            if (e.Data.GetData(typeof(Catalog)) is Catalog)
+                draggedNode = (Catalog)e.Data.GetData(typeof(Catalog));
+            else
+                draggedNode = (File)e.Data.GetData(typeof(File));
+
+            if (!draggedNode.Equals(targetNode) && !ContainsNode(draggedNode, targetNode) && !(targetNode is File))
+            {
+                if (e.Effect == DragDropEffects.Move)
+                {
+                    draggedNode.Remove();
+                    targetNode.Nodes.Add(draggedNode);
+                }
+
+                else if (e.Effect == DragDropEffects.Copy)
+                {
+                    targetNode.Nodes.Add((TreeNode)draggedNode.Clone());
+                }
+
+                targetNode.Expand();
+            }
+        }
+        private bool ContainsNode(TreeNode node1, TreeNode node2)
+        {
+            if (node2.Parent == null) return false;
+            if (node2.Parent.Equals(node1)) return true;
+
+            return ContainsNode(node1, node2.Parent);
+        }
+
         // вспомогательные методы (логика)
 
         /// <summary>
@@ -451,5 +506,8 @@ namespace LW04
             }
 
         }
+
+        
+
     }
 }
