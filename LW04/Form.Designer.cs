@@ -61,7 +61,7 @@
             this.groupBox.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupBox.Location = new System.Drawing.Point(0, 0);
             this.groupBox.Name = "groupBox";
-            this.groupBox.Size = new System.Drawing.Size(258, 450);
+            this.groupBox.Size = new System.Drawing.Size(258, 461);
             this.groupBox.TabIndex = 0;
             this.groupBox.TabStop = false;
             this.groupBox.Text = "C:/";
@@ -70,7 +70,7 @@
             // 
             this.labelCatalog.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.labelCatalog.AutoSize = true;
-            this.labelCatalog.Location = new System.Drawing.Point(12, 245);
+            this.labelCatalog.Location = new System.Drawing.Point(12, 256);
             this.labelCatalog.Name = "labelCatalog";
             this.labelCatalog.Size = new System.Drawing.Size(50, 15);
             this.labelCatalog.TabIndex = 11;
@@ -79,7 +79,7 @@
             // buttonCopyFile
             // 
             this.buttonCopyFile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonCopyFile.Location = new System.Drawing.Point(12, 421);
+            this.buttonCopyFile.Location = new System.Drawing.Point(12, 432);
             this.buttonCopyFile.Name = "buttonCopyFile";
             this.buttonCopyFile.Size = new System.Drawing.Size(240, 23);
             this.buttonCopyFile.TabIndex = 20;
@@ -90,7 +90,7 @@
             // textBoxCatalog
             // 
             this.textBoxCatalog.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBoxCatalog.Location = new System.Drawing.Point(12, 263);
+            this.textBoxCatalog.Location = new System.Drawing.Point(12, 274);
             this.textBoxCatalog.Name = "textBoxCatalog";
             this.textBoxCatalog.Size = new System.Drawing.Size(159, 23);
             this.textBoxCatalog.TabIndex = 12;
@@ -98,7 +98,7 @@
             // buttonCopyCatalog
             // 
             this.buttonCopyCatalog.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonCopyCatalog.Location = new System.Drawing.Point(12, 319);
+            this.buttonCopyCatalog.Location = new System.Drawing.Point(12, 330);
             this.buttonCopyCatalog.Name = "buttonCopyCatalog";
             this.buttonCopyCatalog.Size = new System.Drawing.Size(240, 23);
             this.buttonCopyCatalog.TabIndex = 19;
@@ -109,7 +109,7 @@
             // buttonCatalog
             // 
             this.buttonCatalog.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonCatalog.Location = new System.Drawing.Point(177, 263);
+            this.buttonCatalog.Location = new System.Drawing.Point(177, 274);
             this.buttonCatalog.Name = "buttonCatalog";
             this.buttonCatalog.Size = new System.Drawing.Size(75, 23);
             this.buttonCatalog.TabIndex = 13;
@@ -120,7 +120,7 @@
             // buttonDeleteFile
             // 
             this.buttonDeleteFile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonDeleteFile.Location = new System.Drawing.Point(12, 392);
+            this.buttonDeleteFile.Location = new System.Drawing.Point(12, 403);
             this.buttonDeleteFile.Name = "buttonDeleteFile";
             this.buttonDeleteFile.Size = new System.Drawing.Size(240, 23);
             this.buttonDeleteFile.TabIndex = 18;
@@ -131,7 +131,7 @@
             // buttonDeleteCatalog
             // 
             this.buttonDeleteCatalog.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonDeleteCatalog.Location = new System.Drawing.Point(12, 292);
+            this.buttonDeleteCatalog.Location = new System.Drawing.Point(12, 303);
             this.buttonDeleteCatalog.Name = "buttonDeleteCatalog";
             this.buttonDeleteCatalog.Size = new System.Drawing.Size(240, 23);
             this.buttonDeleteCatalog.TabIndex = 14;
@@ -142,7 +142,7 @@
             // buttonFile
             // 
             this.buttonFile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonFile.Location = new System.Drawing.Point(177, 363);
+            this.buttonFile.Location = new System.Drawing.Point(177, 374);
             this.buttonFile.Name = "buttonFile";
             this.buttonFile.Size = new System.Drawing.Size(75, 23);
             this.buttonFile.TabIndex = 17;
@@ -154,7 +154,7 @@
             // 
             this.labelFile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.labelFile.AutoSize = true;
-            this.labelFile.Location = new System.Drawing.Point(12, 345);
+            this.labelFile.Location = new System.Drawing.Point(12, 356);
             this.labelFile.Name = "labelFile";
             this.labelFile.Size = new System.Drawing.Size(36, 15);
             this.labelFile.TabIndex = 15;
@@ -163,7 +163,7 @@
             // textBoxFile
             // 
             this.textBoxFile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBoxFile.Location = new System.Drawing.Point(12, 363);
+            this.textBoxFile.Location = new System.Drawing.Point(12, 374);
             this.textBoxFile.Name = "textBoxFile";
             this.textBoxFile.Size = new System.Drawing.Size(159, 23);
             this.textBoxFile.TabIndex = 16;
@@ -187,7 +187,7 @@
             this.pictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox.Location = new System.Drawing.Point(258, 0);
             this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(542, 450);
+            this.pictureBox.Size = new System.Drawing.Size(576, 461);
             this.pictureBox.TabIndex = 1;
             this.pictureBox.TabStop = false;
             // 
@@ -195,7 +195,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(834, 461);
             this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.groupBox);
             this.Name = "Form";

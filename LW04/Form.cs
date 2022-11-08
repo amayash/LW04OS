@@ -25,8 +25,8 @@ namespace LW04
             freeElems = new int[maxSizeFS];
             currCapacity = 0;
             bmp = new(pictureBox.Width, pictureBox.Height);
-            xSize = pictureBox.Width / 20;
-            ySize = xSize;
+            xSize = pictureBox.Width / 15;
+            ySize = pictureBox.Width / 15;
             treeView.BeginUpdate();
         }
 
@@ -366,11 +366,11 @@ namespace LW04
                     g.DrawString((i + 1).ToString(), new Font("TimesNewRoman", 12), new SolidBrush(Color.Black), new Point(x, y));
                 }
                 x += xSize;
-                if (x >= pictureBox.Width)
+                if (x >= pictureBox.Width-xSize)
                 {
                     x = 0;
                     y += ySize;
-                    if (y >= pictureBox.Height)
+                    if (y >= pictureBox.Height-ySize)
                         break;
                 }
             }
