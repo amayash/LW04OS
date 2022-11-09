@@ -426,11 +426,11 @@ namespace LW04
                     }
                 }
                 x += xSize;
-                if (x >= pictureBox.Width)
+                if (x >= pictureBox.Width-xSize)
                 {
                     x = 0;
                     y += ySize;
-                    if (y >= pictureBox.Height)
+                    if (y >= pictureBox.Height - xSize)
                         break;
                 }
             }
